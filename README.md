@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fullspectrum-dev/fullspectrum-theme/main/icon.png" width="180" alt="FullSpectrum Logo" />
+  <img src="icon.jpg" width="180" alt="FullSpectrum Logo" />
 </p>
 
 # **FullSpectrum Theme for VS Code**
@@ -31,16 +31,6 @@ code --install-extension fullspectrum-dev.fullspectrum-theme
 vsce package
 code --install-extension fullspectrum-theme-1.0.0.vsix
 ```
-
-## **Capturas**
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/fullspectrum-dev/fullspectrum-theme/main/assets/preview-dark.png" alt="Preview Dark Theme" width="80%">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/fullspectrum-dev/fullspectrum-theme/main/assets/preview-light.png" alt="Preview Light Theme" width="80%">
-</p>
 
 ## **Tecnologías y lenguajes soportados**
 
