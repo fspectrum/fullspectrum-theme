@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#295C3A",
+          "foreground": "#E9F5E7",
+          "leading_diamond": "\u256d\u2500\ue0b6",
+          "style": "diamond",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}  ",
+          "trailing_diamond": "\ue0b0",
+          "type": "os"
+        },
+        {
+          "background": "#F6A67A",
+          "foreground": "#101010",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \uf292 ",
+          "type": "root"
+        },
+        {
+          "background": "#3C5C45",
+          "foreground": "#DCEFD5",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "folder_icon": "\uf07c ",
+            "folder_separator_icon": "\ue0b1 ",
+            "home_icon": " \ueb06 ",
+            "style": "agnoster_left"
+          },
+          "style": "powerline",
+          "template": "{{ path .Path .Location }}",
+          "type": "path"
+        },
+        {
+          "background": "#A1E887",
+          "foreground": "#101010",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "fetch_worktree_count": true
+          },
+          "style": "powerline",
+          "template": " {{ url .UpstreamIcon .UpstreamURL }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "type": "git"
+        },
+        {
+          "background": "#142218",
+          "foreground": "#C5EBCB",
+          "leading_diamond": "<transparent,#142218>\ue0b0</>",
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "template": " {{ .FormattedMs }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "overflow": "break",
+      "segments": [
+        {
+          "background": "#0F1B14",
+          "foreground": "#74C690",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": "\uf489  {{ .Name }} ",
+          "trailing_diamond": "<transparent,#0F1B14>\ue0b2</>",
+          "type": "shell"
+        },
+        {
+          "background": "#B7D68D",
+          "foreground": "#101010",
+          "leading_diamond": "\ue0b2",
+          "style": "diamond",
+          "template": "\ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
+          "trailing_diamond": "<transparent,#B7D68D>\ue0b2</>",
+          "type": "sysinfo"
+        },
+        {
+          "background": "#22372C",
+          "foreground": "#C5EBCB",
+          "leading_diamond": "\ue0b2",
+          "style": "diamond",
+          "template": "\ue641 {{ .CurrentDate | date .Format }}",
+          "trailing_diamond": "\ue0b4",
+          "type": "time",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#74C690",
+          "style": "plain",
+          "template": "\u2570\u2500",
+          "type": "text"
+        },
+        {
+          "background": "#74C690",
+          "foreground": "#111A14",
+          "leading_diamond": "\ue0b6",
+          "properties": {
+            "playing_icon": "\uf1bc "
+          },
+          "style": "diamond",
+          "template": " {{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Artist }} ~ {{ .Track }}{{ end }} ",
+          "trailing_diamond": "\ue0c6 ",
+          "type": "spotify"
+        },
+        {
+          "foreground": "#F6A67A",
+          "style": "plain",
+          "template": "\ue285\ue285",
+          "type": "status",
+          "properties": {
+            "always_enabled": true
+          }
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{ .Folder }}",
+  "final_space": true,
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#C5EBCB",
+    "template": "\ue285 "
+  },
+  "version": 2
+}
