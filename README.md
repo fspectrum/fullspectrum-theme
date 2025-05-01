@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="icon.jpg" width="180" alt="FullSpectrum Logo" />
-</p>
-
 # **FullSpectrum Theme for VS Code**
 
 ## **Descripción**
@@ -11,6 +7,10 @@ Extensión para Visual Studio Code que incluye dos temas personalizados (oscuro 
 ## **Temas incluidos**
 - 🎨 **FullSpectrum Dark** — Colores suaves con enfoque en el púrpura como color principal, reduciendo la fatiga visual.
 - 💡 **FullSpectrum Light** — Alternativa clara con alto contraste controlado, ideal para ambientes muy iluminados.
+- 🌱 **FullSpectrum Spring Boot Dark** — Tema oscuro optimizado para proyectos Spring Boot.
+- 🌞 **FullSpectrum Spring Boot Light** — Tema claro optimizado para proyectos Spring Boot.
+- 🔥 **FullSpectrum Angular 17 Dark** — Tema oscuro diseñado para Angular 17.
+- 🌟 **FullSpectrum Angular 17 Light** — Tema claro diseñado para Angular 17.
 
 ## **Instalación**
 

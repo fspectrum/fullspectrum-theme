@@ -2,7 +2,7 @@
   "name": "fullspectrum-theme",
   "displayName": "FullSpectrum Theme",
   "description": "A vibrant dark theme inspired by the FullSpectrum Creative Software Design, combining modern aesthetics with blockchain-inspired gradients and a bold developer-first color palette.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "icon": "icon.jpg",
   "publisher": "fullspectrum-dev",
   "engines": {
@@ -32,6 +32,16 @@
         "label": "FullSpectrum Spring Boot Light",
         "uiTheme": "vs",
         "path": "./themes/FullSpectrum Spring Boot Light-color-theme.json"
+      },
+      {
+        "label": "FullSpectrum Angular 17 Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/FullSpectrum Angular Dark-color-theme.json"
+      },
+      {
+        "label": "FullSpectrum Angular 17 Light",
+        "uiTheme": "vs",
+        "path": "./themes/FullSpectrum Angular Light-color-theme.json"
       }
     ]
   },
