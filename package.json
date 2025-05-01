@@ -1,0 +1,32 @@
+{
+  "name": "fullspectrum-theme",
+  "displayName": "FullSpectrum Theme",
+  "description": "A vibrant dark theme inspired by the FullSpectrum Creative Software Design, combining modern aesthetics with blockchain-inspired gradients and a bold developer-first color palette.",
+  "version": "1.0.1",
+  "icon": "icon.jpg",
+  "publisher": "fullspectrum-dev",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "FullSpectrum Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/FullSpectrum Dark-color-theme.json"
+      },
+      {
+        "label": "FullSpectrum Light",
+        "uiTheme": "vs",
+        "path": "./themes/FullSpectrum Light-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fspectrum/fullspectrum-theme"
+  }
+}
