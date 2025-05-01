@@ -2,7 +2,7 @@
   "name": "fullspectrum-theme",
   "displayName": "FullSpectrum Theme",
   "description": "A vibrant dark theme inspired by the FullSpectrum Creative Software Design, combining modern aesthetics with blockchain-inspired gradients and a bold developer-first color palette.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "icon.jpg",
   "publisher": "fullspectrum-dev",
   "engines": {
